@@ -11,7 +11,7 @@ $(function () {
       cannonImage = document.getElementById("cannon");
       $(document).on("keydown", handleKeyDown);
       $(document).on("keyup", handleKeyUp);
-      firstTimeSetup = false;
+      firstTimeSetup = true;
       //start game
       setInterval(main, 1000 / frameRate);
     }
@@ -31,7 +31,7 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-    createPlatform(500, 0, 20, 290);
+    createPlatform(0, 740, 1400, 290);
     createPlatform(1350, 400, 50, 50, "red");
 
 
